@@ -9,7 +9,7 @@ export async function POST(req, res){
     let password = JSON['password']
     
     //database checking.. Thus we dont have, we will do it in prisma part
-    if(email === 'email@mail.com' && password === '123'){
+    if(email === 'email@email.com' && password === '123'){
         let Cookie = await TokenCookie(email)
         return NextResponse.json(
             {status: true, message: "Login Success", },
